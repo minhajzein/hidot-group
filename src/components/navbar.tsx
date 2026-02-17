@@ -143,33 +143,33 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[90] bg-background md:hidden pt-24 px-6"
+            className="fixed inset-0 z-[90] bg-background md:hidden pt-20 px-6 overflow-y-auto flex flex-col justify-between"
           >
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-1">
               {menuLinks.map((link, i) => (
                 <motion.div
                   key={link.href}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.05 }}
                 >
                   <Link
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex items-center justify-between py-4 border-b border-border text-2xl font-black text-hidot-navy uppercase tracking-tighter"
+                    className="flex items-center justify-between py-3 border-b border-border text-lg font-black text-hidot-navy uppercase tracking-tighter"
                   >
                     {link.name}
-                    <ChevronRight className="text-hidot-blue" />
+                    <ChevronRight className="h-4 w-4 text-hidot-blue" />
                   </Link>
                 </motion.div>
               ))}
 
-              <div className="pt-8 space-y-4">
+              <div className="pt-6 space-y-3">
                 <Link
                   href="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <Button className="w-full h-16 bg-hidot-navy text-white text-lg font-black uppercase rounded-2xl">
+                  <Button className="w-full h-14 bg-hidot-navy text-white text-base font-black uppercase rounded-xl">
                     Partner With Us
                   </Button>
                 </Link>
@@ -179,7 +179,7 @@ const Navbar = () => {
                 >
                   <Button
                     variant="outline"
-                    className="w-full h-16 border-2 border-hidot-navy text-hidot-navy text-lg font-black uppercase rounded-2xl"
+                    className="w-full h-14 border-2 border-hidot-navy text-hidot-navy text-base font-black uppercase rounded-xl"
                   >
                     Investor Portal
                   </Button>
@@ -187,19 +187,19 @@ const Navbar = () => {
               </div>
             </div>
 
-            <div className="absolute bottom-10 left-6 right-6 text-center">
-              <p className="text-sm text-muted-foreground uppercase tracking-widest font-bold mb-4">
+            <div className="py-8 text-center mt-auto">
+              <p className="text-[10px] text-muted-foreground uppercase tracking-[0.3em] font-bold mb-4">
                 © 2024 HiDot Group
               </p>
               <div className="flex justify-center gap-6 opacity-40">
-                <div className="w-10 h-10 rounded-full border border-hidot-navy flex items-center justify-center">
-                  In
+                <div className="w-8 h-8 rounded-full border border-hidot-navy flex items-center justify-center text-[10px] font-bold">
+                  IN
                 </div>
-                <div className="w-10 h-10 rounded-full border border-hidot-navy flex items-center justify-center">
-                  Tw
+                <div className="w-8 h-8 rounded-full border border-hidot-navy flex items-center justify-center text-[10px] font-bold">
+                  TW
                 </div>
-                <div className="w-10 h-10 rounded-full border border-hidot-navy flex items-center justify-center">
-                  Ig
+                <div className="w-8 h-8 rounded-full border border-hidot-navy flex items-center justify-center text-[10px] font-bold">
+                  IG
                 </div>
               </div>
             </div>
