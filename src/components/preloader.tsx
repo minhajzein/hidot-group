@@ -64,7 +64,7 @@ const Preloader = () => {
                 transition={{ delay: 0.5, duration: 0.8 }}
                 className="mt-6 text-hidot-blue/40 text-xs font-bold tracking-[0.5em] uppercase"
               >
-                Building Your Business
+                Build Your Business
               </motion.p>
             </motion.div>
           </div>

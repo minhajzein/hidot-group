@@ -104,12 +104,16 @@ const Navbar = () => {
         </NavigationMenu>
 
         <div className="flex items-center space-x-4">
-          <Button variant="ghost" className="hidden sm:flex">
-            Investors
-          </Button>
-          <Button className="bg-hidot-navy text-white hover:bg-hidot-navy/90 rounded-full">
-            Partner With Us
-          </Button>
+          <Link href="/ventures">
+            <Button variant="ghost" className="hidden sm:flex">
+              Investors
+            </Button>
+          </Link>
+          <Link href="/contact">
+            <Button className="bg-hidot-navy text-white hover:bg-hidot-navy/90 rounded-full">
+              Partner With Us
+            </Button>
+          </Link>
         </div>
       </div>
     </motion.header>
@@ -117,13 +121,14 @@ const Navbar = () => {
 };
 
 const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+  HTMLAnchorElement,
+  React.ComponentPropsWithoutRef<"a"> & { title: string }
+>(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
+          href={href as string}
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
@@ -135,7 +140,7 @@ const ListItem = React.forwardRef<
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   );
