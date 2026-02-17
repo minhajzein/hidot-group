@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HiDot Group | Luxury Holidays & Premium Branding",
+  title: "HiDot Group | Build Your Business, Premium Branding & Luxury Holidays",
   description:
-    "Experience the extraordinary with HiDot Group. Expertly curated luxury resorts and bespoke branding services.",
+    "HiDot Group is a diversified business group with interests in hospitality, branding, and technology.",
 };
 
 import SmoothScroll from "@/components/smooth-scroll";
