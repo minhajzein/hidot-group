@@ -164,7 +164,7 @@ const Navbar = () => {
                 </motion.div>
               ))}
 
-              <div className="pt-6 space-y-3">
+              <div className="pt-6 flex flex-col gap-3">
                 <Link
                   href="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -191,17 +191,6 @@ const Navbar = () => {
               <p className="text-[10px] text-muted-foreground uppercase tracking-[0.3em] font-bold mb-4">
                 © 2024 HiDot Group
               </p>
-              <div className="flex justify-center gap-6 opacity-40">
-                <div className="w-8 h-8 rounded-full border border-hidot-navy flex items-center justify-center text-[10px] font-bold">
-                  IN
-                </div>
-                <div className="w-8 h-8 rounded-full border border-hidot-navy flex items-center justify-center text-[10px] font-bold">
-                  TW
-                </div>
-                <div className="w-8 h-8 rounded-full border border-hidot-navy flex items-center justify-center text-[10px] font-bold">
-                  IG
-                </div>
-              </div>
             </div>
           </motion.div>
         )}
