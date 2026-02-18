@@ -52,7 +52,7 @@ const HolidaysGateway = () => {
           >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden h-[450px] w-full bg-hidot-navy relative group shadow-2xl">
               <NextImage
-                src="/resorts/resort-gateway.jpeg"
+                src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&q=80&w=1000"
                 alt="Luxury Resort"
                 fill
                 className="object-cover object-right opacity-80 group-hover:scale-105 transition-transform duration-1000"

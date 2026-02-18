@@ -117,7 +117,7 @@ const Navbar = () => {
                 Investors
               </Button>
             </Link>
-            <Link href="/contact" className="hidden xs:block">
+            <Link href="/contact" className="hidden sm:block">
               <Button className="bg-hidot-navy text-white hover:bg-hidot-navy/90 rounded-full px-6 text-xs font-bold uppercase tracking-widest">
                 Partner With Us
               </Button>

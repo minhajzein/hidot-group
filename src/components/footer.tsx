@@ -137,7 +137,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="bg-white/5 border border-white/10 rounded-full px-4 py-2 flex-1 focus:outline-none focus:border-hidot-blue transition-colors"
+                className="bg-white/5 w-auto border border-white/10 rounded-full px-4 py-2 flex-1 focus:outline-none focus:border-hidot-blue transition-colors"
               />
               <button className="bg-hidot-blue text-hidot-navy font-bold px-6 py-2 rounded-full hover:bg-white transition-colors">
                 Join
