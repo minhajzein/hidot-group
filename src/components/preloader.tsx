@@ -42,7 +42,7 @@ const Preloader = () => {
                   alt="HiDot Group Logo"
                   width={150}
                   height={50}
-                  className="h-12 w-auto"
+                  className="h-12 w-auto object-contain"
                 />
               </div>
               <div className="w-48 md:w-64 h-px bg-white/10 relative overflow-hidden">

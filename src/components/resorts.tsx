@@ -52,10 +52,10 @@ const HolidaysGateway = () => {
           >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden h-[450px] w-full bg-hidot-navy relative group shadow-2xl">
               <NextImage
-                src="https://images.unsplash.com/photo-1573843411231-bbd733920b80?auto=format&fit=crop&q=80&w=1000"
+                src="/resorts/resort-gateway.jpeg"
                 alt="Luxury Resort"
                 fill
-                className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000"
+                className="object-cover object-right opacity-80 group-hover:scale-105 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-hidot-navy/80 via-transparent to-transparent" />
               <div className="absolute bottom-10 left-10 p-4">
@@ -63,7 +63,7 @@ const HolidaysGateway = () => {
                   Featured Destination
                 </div>
                 <div className="text-white text-3xl font-black">
-                  Azure Bay Resort
+                  HiDot Luxury Resorts
                 </div>
               </div>
             </div>

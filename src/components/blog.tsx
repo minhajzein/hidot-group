@@ -23,7 +23,7 @@ const posts = [
     date: "Feb 10, 2024",
     author: "James Wilson",
     image:
-      "https://images.unsplash.com/photo-1544644181-1484b3f4c71a?auto=format&fit=crop&q=80&w=800",
+      "/resorts/chemparathi.png",
     category: "Holidays",
   },
   {
